@@ -1,4 +1,4 @@
-const socket = io('https://chat-room-v1.vercel.app'); // vercel url placeholder rn cuz i havent deployed yet :P
+const socket = io('http://chat-room-v1.vercel.app'); // vercel url placeholder rn cuz i havent deployed yet :P
 
 const messagesDiv = document.getElementById('messages');
 const messageInput = document.getElementById('message-input');
