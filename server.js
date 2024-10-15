@@ -20,6 +20,14 @@ io.on('connection', (socket) => {
     });
 });
 
+const io = socketIo(server, {
+    cors: {
+        origin: "https://chat-room-v1.vercel.app",
+        methods: ["GET", "POST"],
+        credentials: true
+    }
+});
+
 const PORT = 3000;
 server.listen(PORT, () => {
     console.log(`{!dev!} - server is running on http://localhost:${PORT}`);
